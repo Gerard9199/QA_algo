@@ -59,6 +59,21 @@ poppler_path = r"C:\Users\sasuk\Downloads\Release-24.08.0-0\poppler-24.08.0\Libr
 ---
 
 ## Usage
+You must change some path dependencies and routes in the tool.py
+
+For example (for transformers):
+```python
+os.environ["SENTENCE_TRANSFORMERS_HOME"] = r"C:\Users\sasuk\Desktop\cache_transformers"
+os.environ["HF_HOME"] = r"C:\Users\sasuk\Desktop\cache_transformers\huggingface"
+os.environ["HF_HUB_CACHE"] = r"C:\Users\sasuk\Desktop\cache_transformers\huggingface"
+os.environ["TRANSFORMERS_CACHE"] = r"C:\Users\sasuk\Desktop\cache_transformers\transformers_cache"
+```
+As well as these:
+```python
+poppler_path = r"C:\Users\sasuk\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin"
+pdf_path = r"C:\Users\sasuk\Downloads\DS challenge_\DS challenge\CONTRATO_AP000000718.pdf"
+```
+
 Run the main script to start the application:
 ```python
 python main.py
