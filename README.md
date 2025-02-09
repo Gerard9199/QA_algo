@@ -1,4 +1,4 @@
-# Document QA System
+# QA_algo
 
 A Python-based tool for performing question-answering over documents with integrated OCR fallback.
 
@@ -34,12 +34,12 @@ This solution enables users to extract and query key information from PDF docume
 To get started, clone the repository and install the required Python dependencies:
 
 ```bash
-git clone https://github.com/yourusername/Document_QA_System.git
-cd Document_QA_System
+git clone https://github.com/yourusername/QA_algo.git
+cd QA_algo
 ```
 
 We need to install some external tools:
-## Tesseract OCR
+### Tesseract OCR
 
 1. **Download Tesseract OCR** from [UB Mannheim Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki).  
 2. **Install Tesseract**; by default, it installs to:
@@ -48,7 +48,7 @@ We need to install some external tools:
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 ```
 
-## Poppler for Windows
+### Poppler for Windows
 1. **Download Poppler for Windows** from [Poppler for Windows Releases]([https://github.com/UB-Mannheim/tesseract/wiki](https://github.com/oschwartz10612/poppler-windows/releases/)).
 2. Extract the ZIP file to a folder, for example: C:\Users\sasuk\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin
 3. When calling the read_pdf function, pass this path as the poppler_path:
