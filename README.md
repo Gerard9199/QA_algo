@@ -53,7 +53,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 2. Extract the ZIP file to a folder, for example: C:\Users\sasuk\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin
 3. When calling the read_pdf function, pass this path as the poppler_path:
 ```python
-poppler_path = r"C:\Users\sasuk\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin"
+poppler_path = r"C:\Users\xx\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin"
 ```
 
 ---
@@ -63,15 +63,15 @@ You must change some path dependencies and routes in the tool.py
 
 For example (for transformers):
 ```python
-os.environ["SENTENCE_TRANSFORMERS_HOME"] = r"C:\Users\sasuk\Desktop\cache_transformers"
-os.environ["HF_HOME"] = r"C:\Users\sasuk\Desktop\cache_transformers\huggingface"
-os.environ["HF_HUB_CACHE"] = r"C:\Users\sasuk\Desktop\cache_transformers\huggingface"
-os.environ["TRANSFORMERS_CACHE"] = r"C:\Users\sasuk\Desktop\cache_transformers\transformers_cache"
+os.environ["SENTENCE_TRANSFORMERS_HOME"] = r"C:\Users\xx\Desktop\cache_transformers"
+os.environ["HF_HOME"] = r"C:\Users\xx\Desktop\cache_transformers\huggingface"
+os.environ["HF_HUB_CACHE"] = r"C:\Users\xx\Desktop\cache_transformers\huggingface"
+os.environ["TRANSFORMERS_CACHE"] = r"C:\Users\xx\Desktop\cache_transformers\transformers_cache"
 ```
 As well as these:
 ```python
-poppler_path = r"C:\Users\sasuk\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin"
-pdf_path = r"C:\Users\sasuk\Downloads\DS challenge_\DS challenge\CONTRATO_AP000000718.pdf"
+poppler_path = r"C:\Users\xx\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin"
+pdf_path = r"C:\Users\xx\Downloads\desired_document.pdf"
 ```
 
 Run the main script to start the application:
